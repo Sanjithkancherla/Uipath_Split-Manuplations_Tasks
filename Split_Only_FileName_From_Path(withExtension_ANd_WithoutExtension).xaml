@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="first_test" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="444,1826" sap2010:WorkflowViewState.IdRef="first_test_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="first_test" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="444,2361" sap2010:WorkflowViewState.IdRef="first_test_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
       <x:String>System.Activities</x:String>
@@ -44,17 +44,19 @@
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Get_FileName_WithoutExtension_And_WithExtension" sap:VirtualizedContainerService.HintSize="424,1766" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Get_FileName_WithoutExtension_And_WithExtension" sap:VirtualizedContainerService.HintSize="424,2301" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:DateTime" Name="StartTime" />
       <Variable x:TypeArguments="s:DateTime" Name="EndTime" />
       <Variable x:TypeArguments="x:TimeSpan" Name="Duration" />
+      <Variable x:TypeArguments="x:String" Name="Change_FileNameExtension" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
+    <ui:Comment sap:VirtualizedContainerService.HintSize="382,93" sap2010:WorkflowViewState.IdRef="Comment_1" Text="//1)Get FileName without extension&#xD;&#xA;   2)Get FileName with extension&#xD;&#xA;   3)Get File Path( without filename)&#xD;&#xA;   4)Change File extension" />
     <Assign DisplayName="Assign(Start Time)" sap:VirtualizedContainerService.HintSize="382,60" sap2010:WorkflowViewState.IdRef="Assign_6">
       <Assign.To>
         <OutArgument x:TypeArguments="s:DateTime">[StartTime]</OutArgument>
@@ -64,7 +66,7 @@
       </Assign.Value>
     </Assign>
     <ui:LogMessage DisplayName="Log Message(Start Time)" sap:VirtualizedContainerService.HintSize="382,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Execution Startedtime: &quot;+StartTime.ToString]" />
-    <Sequence DisplayName="For Each Files in Folder" sap:VirtualizedContainerService.HintSize="382,981" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence DisplayName="For Each Files in Folder" sap:VirtualizedContainerService.HintSize="382,1383" sap2010:WorkflowViewState.IdRef="Sequence_1">
       <Sequence.Variables>
         <Variable x:TypeArguments="s:String[]" Name="files" />
         <Variable x:TypeArguments="x:String" Name="SelectFolder" />
@@ -90,19 +92,20 @@
           <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles(selectFolder)]</InArgument>
         </Assign.Value>
       </Assign>
-      <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For each file(Loop into Files inside Folder)" sap:VirtualizedContainerService.HintSize="340,689" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[files]">
+      <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For each file(Loop into Files inside Folder)" sap:VirtualizedContainerService.HintSize="340,1091" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[files]">
         <ui:ForEach.Body>
           <ActivityAction x:TypeArguments="x:String">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:String" Name="file" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,555" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,957" sap2010:WorkflowViewState.IdRef="Sequence_2">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="arrname" />
                 <Variable x:TypeArguments="x:String" Name="strFileName" />
                 <Variable x:TypeArguments="x:String" Name="Filename" />
-                <Variable x:TypeArguments="ui:GenericValue" Name="FileName_WithoutExtension" />
-                <Variable x:TypeArguments="ui:GenericValue" Name="FileName_WithExtension" />
+                <Variable x:TypeArguments="x:String" Name="FileName_WithoutExtension" />
+                <Variable x:TypeArguments="x:String" Name="FileName_WithExtension" />
+                <Variable x:TypeArguments="x:String" Name="FileName_Path" />
               </Sequence.Variables>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -112,22 +115,40 @@
               <WriteLine DisplayName="FileName with Path" sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[file]" />
               <Assign DisplayName="Assign(Get FileName withoutExtension)" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_3">
                 <Assign.To>
-                  <OutArgument x:TypeArguments="ui:GenericValue">[FileName_WithoutExtension]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String">[FileName_WithoutExtension]</OutArgument>
                 </Assign.To>
                 <Assign.Value>
-                  <InArgument x:TypeArguments="ui:GenericValue">[Path.GetFileNameWithoutExtension(file)]</InArgument>
+                  <InArgument x:TypeArguments="x:String">[Path.GetFileNameWithoutExtension(file)]</InArgument>
                 </Assign.Value>
               </Assign>
               <Assign DisplayName="Assign(Get FileName With Extension)" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_5">
                 <Assign.To>
-                  <OutArgument x:TypeArguments="ui:GenericValue">[FileName_WithExtension]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String">[FileName_WithExtension]</OutArgument>
                 </Assign.To>
                 <Assign.Value>
-                  <InArgument x:TypeArguments="ui:GenericValue">[Path.GetFileName(file)]</InArgument>
+                  <InArgument x:TypeArguments="x:String">[Path.GetFileName(file)]</InArgument>
                 </Assign.Value>
               </Assign>
-              <WriteLine DisplayName="Write Line(FileName without Extension)" sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[FileName_WithoutExtension]" />
-              <WriteLine DisplayName="Write Line(FileName with Extension)" sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[FileName_WithExtension]" />
+              <Assign DisplayName="Assign(Get FileName Path)" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_9">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[FileName_Path]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[file.Substring(0, file.Length - FileName_WithExtension.Length)]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <Assign DisplayName="Assign(Change FileName Path Extension)" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_10">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[Change_FileNameExtension]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[Path.ChangeExtension(file, "123")]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <WriteLine DisplayName="Write Line(Change FileExtension)" sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="[&quot;Change FileNameExtension:&quot;+Change_FileNameExtension]" />
+              <WriteLine DisplayName="Write Line(FileName Path)" sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[&quot;FileName Path: &quot;+FileName_Path]" />
+              <WriteLine DisplayName="Write Line(FileName without Extension)" sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[&quot;FileName without extension: &quot;+FileName_WithoutExtension]" />
+              <WriteLine DisplayName="Write Line(FileName with Extension)" sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[&quot;FileName with extension: &quot;+FileName_WithExtension]" />
             </Sequence>
           </ActivityAction>
         </ui:ForEach.Body>
