@@ -100,9 +100,6 @@
             </ActivityAction.Argument>
             <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,957" sap2010:WorkflowViewState.IdRef="Sequence_2">
               <Sequence.Variables>
-                <Variable x:TypeArguments="x:String" Name="arrname" />
-                <Variable x:TypeArguments="x:String" Name="strFileName" />
-                <Variable x:TypeArguments="x:String" Name="Filename" />
                 <Variable x:TypeArguments="x:String" Name="FileName_WithoutExtension" />
                 <Variable x:TypeArguments="x:String" Name="FileName_WithExtension" />
                 <Variable x:TypeArguments="x:String" Name="FileName_Path" />
