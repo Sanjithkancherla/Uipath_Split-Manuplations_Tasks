@@ -81,7 +81,7 @@
           <OutArgument x:TypeArguments="x:String">[SelectFolder]</OutArgument>
         </Assign.To>
         <Assign.Value>
-          <InArgument x:TypeArguments="x:String">C:\Users\rathina.krithika\Desktop\Uipath Repo\Execl_snippets_Tasks\Input\</InArgument>
+          <InArgument x:TypeArguments="x:String">["C:\Users\rathina.krithika\Desktop\Uipath Repo\Split_Snippets_Tasks\Input\000_Input_FileFolder\"]</InArgument>
         </Assign.Value>
       </Assign>
       <Assign DisplayName="Assign Get Files from Directory" sap:VirtualizedContainerService.HintSize="340,60" sap2010:WorkflowViewState.IdRef="Assign_1">

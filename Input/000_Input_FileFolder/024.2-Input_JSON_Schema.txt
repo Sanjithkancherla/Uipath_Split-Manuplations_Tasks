@@ -1,0 +1,12 @@
+{
+            'description': 'An employee', 'type': 'object',
+            'properties':
+            {
+               'name': {'type':'string'},
+               'id': {'type':'string'},
+               'company': {'type':'string'},
+               'role': {'type':'string'},
+               'skill': {'type': 'array'},
+               'items': {'type':'string'}
+            }
+ }
