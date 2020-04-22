@@ -148,7 +148,7 @@
               <WriteLine DisplayName="Write line(Print FileNames)" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[file]" />
               <ui:AppendLine DisplayName="Append Line(Update FileName Into Notepad)" FileName="[Output_NotepadPath]" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="AppendLine_10" Text="[vbNewLine+&quot;FileName: &quot; +file +vbNewLine]" />
               <ui:ReadPDFText PreserveFormatting="{x:Null}" DisplayName="Read PDF Text(Pdf File)" FileName="[file.ToString]" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ReadPDFText_2" Range="All" Text="[Out_PDFData]" />
-              <Flowchart DisplayName="(Extract Data From PDF)" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+              <Flowchart DisplayName="(Extract Data From PDF)" sap:VirtualizedContainerService.HintSize="634,636" sap2010:WorkflowViewState.IdRef="Flowchart_1">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -198,7 +198,7 @@
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <av:Point x:Key="ShapeLocation">200,297</av:Point>
                           <av:Size x:Key="ShapeSize">200,66</av:Size>
-                          <av:PointCollection x:Key="ConnectorLocation">300,363 300,393 310,393 310,404.5</av:PointCollection>
+                          <av:PointCollection x:Key="ConnectorLocation">300,363 300,424.5</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <Sequence DisplayName="Find_IndexOf_Specific_Data's (PDF Data)" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_33">
@@ -245,7 +245,7 @@
                         <FlowStep x:Name="__ReferenceID6">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <av:Point x:Key="ShapeLocation">210,404.5</av:Point>
+                              <av:Point x:Key="ShapeLocation">200,424.5</av:Point>
                               <av:Size x:Key="ShapeSize">200,51</av:Size>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
