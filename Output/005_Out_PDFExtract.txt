@@ -1,0 +1,30 @@
+
+FileName: C:\Users\rathina.krithika\Desktop\Uipath Repo\Split_Snippets_Tasks\Input\005_Input_Extract_PDF_Details\005.1_Input_Extract_PDF_Details.pdf
+
+Start Date: 7 Apr 2020
+End Date: 13 Apr 2020
+Requester s Name: Meng Li
+ISID: limeng8 
+Computer Name: CNWBCMRPRI30038
+Country and Division: China GCTO 
+Computer OS: Windows Mac
+
+FileName: C:\Users\rathina.krithika\Desktop\Uipath Repo\Split_Snippets_Tasks\Input\005_Input_Extract_PDF_Details\005.2_Input_Extract_PDF_Details.pdf
+
+Start Date: 7 Apr 2020
+End Date: 13 Apr 2020
+Requester s Name: Meng Li
+ISID: limeng8 
+Computer Name: CNWBCMRPRI30038
+Country and Division: China GCTO 
+Computer OS: Windows Mac
+
+FileName: C:\Users\rathina.krithika\Desktop\Uipath Repo\Split_Snippets_Tasks\Input\005_Input_Extract_PDF_Details\005.3_Input_Extract_PDF_Details.pdf
+
+Start Date: 7 Apr 2020
+End Date: 13 Apr 2020
+Requester s Name: Meng Li
+ISID: limeng8 
+Computer Name: CNWBCMRPRI30038
+Country and Division: China GCTO 
+Computer OS: Windows Mac
