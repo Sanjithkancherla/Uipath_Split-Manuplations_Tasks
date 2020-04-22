@@ -51,7 +51,6 @@
       <Variable x:TypeArguments="x:String" Name="Input_PdfFilePath" />
       <Variable x:TypeArguments="x:String" Name="Output_NotepadPath" />
       <Variable x:TypeArguments="x:String" Name="Out_PDFData" />
-      <Variable x:TypeArguments="x:String" Name="selectFolder" />
       <Variable x:TypeArguments="s:String[]" Name="files" />
       <Variable x:TypeArguments="s:DateTime" Name="EndTime" />
       <Variable x:TypeArguments="x:TimeSpan" Name="Duration" />
@@ -63,7 +62,6 @@
       <Variable x:TypeArguments="x:String" Name="Find_EndLine_Element" />
       <Variable x:TypeArguments="x:Int32" Name="Find_IndexOf_EndLine_Element" />
       <Variable x:TypeArguments="x:String" Name="Find_Element" />
-      <Variable x:TypeArguments="x:String" Name="Replace_Emptyspace_In_Element" />
       <Variable x:TypeArguments="s:String[]" Name="Split_Element_To_Extract_Data" />
       <Variable x:TypeArguments="x:Int32" Name="Find_Length_Of_Splited_Element" />
       <Variable x:TypeArguments="ui:GenericValue" Name="Extracted_Data" />
