@@ -59,7 +59,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:Comment sap:VirtualizedContainerService.HintSize="334,74" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Split String delimited by a string or an array of strings&#xD;&#xA; &#xD;&#xA;" />
+    <ui:Comment sap:VirtualizedContainerService.HintSize="334,74" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Split String delimited by a string or an array of strings&#xA; &#xA;" />
     <Assign DisplayName="Assign(Start Time)" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_5">
       <Assign.To>
         <OutArgument x:TypeArguments="s:DateTime">[StartTime]</OutArgument>
