@@ -1,0 +1,12 @@
+
+FileName: C:\Users\rathina.krithika\Desktop\Uipath Repo\Split_Snippets_Tasks\Input\006_Input_FileFolder\006.1_Input_Invoice_PDF.pdf
+
+Total : 154477.2
+
+FileName: C:\Users\rathina.krithika\Desktop\Uipath Repo\Split_Snippets_Tasks\Input\006_Input_FileFolder\006.2_Input_Invoice_PDF.pdf
+
+Total : 154477.2
+
+FileName: C:\Users\rathina.krithika\Desktop\Uipath Repo\Split_Snippets_Tasks\Input\006_Input_FileFolder\006.3_Input_Invoice_PDF.pdf
+
+Total : 154477.2
