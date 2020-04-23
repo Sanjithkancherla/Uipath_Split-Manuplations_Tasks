@@ -119,7 +119,7 @@
           <OutArgument x:TypeArguments="x:String">[Output_NotepadPath]</OutArgument>
         </Assign.To>
         <Assign.Value>
-          <InArgument x:TypeArguments="x:String">["C:\Users\rathina.krithika\Desktop\Uipath Repo\Split_Snippets_Tasks\Output\007_Out_WordExtract.txt"]</InArgument>
+          <InArgument x:TypeArguments="x:String">["C:\Users\rathina.krithika\Desktop\Uipath Repo\Split_Snippets_Tasks\Output\005_Out_ExtractedData.txt"]</InArgument>
         </Assign.Value>
       </Assign>
       <Assign DisplayName="File Type(***)" sap:VirtualizedContainerService.HintSize="454,60" sap2010:WorkflowViewState.IdRef="Assign_42">

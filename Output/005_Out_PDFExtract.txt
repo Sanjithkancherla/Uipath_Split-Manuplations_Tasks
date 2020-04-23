@@ -1,2 +1,0 @@
-
-FileName: C:\Users\rathina.krithika\Desktop\Uipath Repo\Split_Snippets_Tasks\Input\005_Input_Extract_PDF_Details\005.1_Input_Extract_PDF_Details.pdf
