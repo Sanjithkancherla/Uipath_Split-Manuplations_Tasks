@@ -96,7 +96,7 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:Comment sap:VirtualizedContainerService.HintSize="454,112" sap2010:WorkflowViewState.IdRef="Comment_1" Text="//Extract specified data from all pdf files (seperate folder )or word files(seperate folder)  inside the folder and update extracted data into notepad file&#xD;&#xA;&#xD;&#xA;" />
+      <ui:Comment sap:VirtualizedContainerService.HintSize="454,112" sap2010:WorkflowViewState.IdRef="Comment_1" Text="//Extract specified data from all pdf files (seperate folder )or word files(seperate folder)  inside the folder and update extracted data into notepad file&#xA;&#xA;" />
       <Assign DisplayName="Assign(Start Time)" sap:VirtualizedContainerService.HintSize="454,60" sap2010:WorkflowViewState.IdRef="Assign_1">
         <Assign.To>
           <OutArgument x:TypeArguments="s:DateTime">[StartTime]</OutArgument>
@@ -453,7 +453,7 @@
                                 <av:Size x:Key="ShapeSize">200,51</av:Size>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <While DisplayName="While(Loop into Specific Range Of Data)" sap:VirtualizedContainerService.HintSize="484,224" sap2010:WorkflowViewState.IdRef="While_1">
+                            <While DisplayName="While(Loop into Specific Range Of Data)" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="While_1">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -463,14 +463,14 @@
                               <While.Condition>
                                 <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="Find_IndexOf_StartLine_Element&lt;Find_IndexOf_EndLine_Element" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_1" />
                               </While.Condition>
-                              <Sequence DisplayName="Extract Word Data " sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                              <Sequence DisplayName="Extract Word Data " sap:VirtualizedContainerService.HintSize="304,349" sap2010:WorkflowViewState.IdRef="Sequence_9">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <Sequence DisplayName="(Split Particular Line Data)" sap:VirtualizedContainerService.HintSize="262,66" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                <Sequence DisplayName="(Split Particular Line Data)" sap:VirtualizedContainerService.HintSize="304,352" sap2010:WorkflowViewState.IdRef="Sequence_6">
                                   <Sequence.Variables>
                                     <Variable x:TypeArguments="x:String" Name="Find_Element" />
                                     <Variable x:TypeArguments="x:String" Name="Replace_Emptyspace_In_Element" />
@@ -506,7 +506,7 @@
                                     </Assign.Value>
                                   </Assign>
                                 </Sequence>
-                                <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each(Loop Into Splited Element-To Extract Data))" sap:VirtualizedContainerService.HintSize="562,617" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Split_Element_To_Extract_Data]">
+                                <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each(Loop Into Splited Element-To Extract Data))" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Split_Element_To_Extract_Data]">
                                   <ui:ForEach.Body>
                                     <ActivityAction x:TypeArguments="x:Object">
                                       <ActivityAction.Argument>
