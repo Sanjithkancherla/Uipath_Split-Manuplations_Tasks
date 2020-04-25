@@ -181,7 +181,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:BuildDataTable>
-    <While DisplayName="(Extract Data)" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="While_1">
+    <While DisplayName="(Extract Data)" sap:VirtualizedContainerService.HintSize="484,401" sap2010:WorkflowViewState.IdRef="While_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -236,7 +236,7 @@
                     <av:PointCollection x:Key="ConnectorLocation">300,445.5 300,500</av:PointCollection>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="(Extract Data)Loop Into Regex Pattern Values" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[Init_Regex_Pattern_Values]">
+                <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="(Extract Data)Loop Into Regex Pattern Values" sap:VirtualizedContainerService.HintSize="340,548" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[Init_Regex_Pattern_Values]">
                   <ui:ForEach.Body>
                     <ActivityAction x:TypeArguments="x:Object">
                       <ActivityAction.Argument>
@@ -259,7 +259,7 @@
                             <InArgument x:TypeArguments="str:Match">[System.Text.RegularExpressions.Regex.match(Splited_Data, item.ToString)]</InArgument>
                           </Assign.Value>
                         </Assign>
-                        <AddToCollection x:TypeArguments="x:String" Collection="[ExtractedList]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="AddToCollection`1_3" Item="[Extracted_Data.ToString]" />
+                        <AddToCollection x:TypeArguments="x:String" Collection="[ExtractedList]" DisplayName="Extracted Data To Collection" sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="AddToCollection`1_3" Item="[Extracted_Data.ToString]" />
                         <Assign DisplayName="Assign(Replace Empty InPlace Of Extracted Data )" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_43">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:String">[Splited_Data]</OutArgument>
@@ -268,7 +268,7 @@
                             <InArgument x:TypeArguments="x:String">[trim(System.Text.RegularExpressions.Regex.Replace(Splited_Data, Extracted_Data.ToString,""))]</InArgument>
                           </Assign.Value>
                         </Assign>
-                        <Assign DisplayName="Assign(Replace Empty InPlace Of Extracted Data )" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_45">
+                        <Assign DisplayName="Pass Value To Variable Of Last Item In An Array" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_45">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:String">[Init_Regex_Pattern_Values(Init_Regex_Pattern_Values.Length-1)]</OutArgument>
                           </Assign.To>
