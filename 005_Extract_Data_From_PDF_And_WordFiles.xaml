@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>558,2706</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>558,2746</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>_007_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="23">
@@ -372,7 +372,7 @@
                         <av:PointCollection x:Key="ConnectorLocation">300,253 300,327</av:PointCollection>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Sequence DisplayName="Remove Empty Lines And Split String Data" sap:VirtualizedContainerService.HintSize="304,252" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <Sequence DisplayName="Remove Empty Lines And Split String Data" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_4">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -453,7 +453,7 @@
                                 <av:Size x:Key="ShapeSize">200,51</av:Size>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <While DisplayName="While(Loop into Specific Range Of Data)" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="While_1">
+                            <While DisplayName="While(Loop into Specific Range Of Data)" sap:VirtualizedContainerService.HintSize="484,224" sap2010:WorkflowViewState.IdRef="While_1">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -470,7 +470,7 @@
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <Sequence DisplayName="(Split Particular Line Data)" sap:VirtualizedContainerService.HintSize="304,352" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                <Sequence DisplayName="(Split Particular Line Data)" sap:VirtualizedContainerService.HintSize="262,66" sap2010:WorkflowViewState.IdRef="Sequence_6">
                                   <Sequence.Variables>
                                     <Variable x:TypeArguments="x:String" Name="Find_Element" />
                                     <Variable x:TypeArguments="x:String" Name="Replace_Emptyspace_In_Element" />
@@ -506,7 +506,7 @@
                                     </Assign.Value>
                                   </Assign>
                                 </Sequence>
-                                <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each(Loop Into Splited Element-To Extract Data))" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Split_Element_To_Extract_Data]">
+                                <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each(Loop Into Splited Element-To Extract Data))" sap:VirtualizedContainerService.HintSize="562,617" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Split_Element_To_Extract_Data]">
                                   <ui:ForEach.Body>
                                     <ActivityAction x:TypeArguments="x:Object">
                                       <ActivityAction.Argument>
